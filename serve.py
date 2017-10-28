@@ -65,7 +65,10 @@ def upload_file():
                 file_url = url_for('uploaded_file', filename=filename)
                 return html + '<br><img src=' + file_url + '>'
         
-    return html + '<br><img src=' + '/uploads/wsyzkadqb.png' + '>'
+    return html + '<br><img src=' + '/uploads/wsyzkadqb.png' + '>' + \
+           '<p>1.请让图片与文档相同比如233.png、233.docx</p>' + \
+           '<p>2.暂时只支持.docx</p>' + \
+           '<p>3.请先上传图片再上传文档</p>'
 
 
 if __name__ == '__main__':
